@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images from Localhost Ports</title>
+</head>
+<body>
+    <h1>Images Referencing Localhost Ports from 10000 to 11000</h1>
+
+    <div>
+        <!-- Looping through ports from 10000 to 11000 -->
+        <!-- Each image's src attribute points to localhost with the port number -->
+        <script>
+            for (let port = 10000; port <= 11000; port++) {
+                document.write(`<img src="http://localhost:${port}/image.png" alt="Image from port ${port}" style="width: 200px; height: auto;">`);
+            }
+        </script>
+    </div>
+</body>
+</html>
